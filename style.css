@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+    display: flex;
+}
+
+.title {
+    flex: 1;
+    text-align: left;
+    font-size: 32px;
+    font-weight: bold;
+    height: 130px;
+    line-height: 130px;
+}
+
+.github {
+    flex: 1;
+    max-width: 50px;
+    background: #ddd;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    height: 250px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .image {
+        height: 200px;
+        background-color: #b11f1f;
+    }
+
+    .title {
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.item-1 {
+    background-image: url('./img/1.png');
+}
+
+.item-2 {
+    background-image: url('./img/2.png');
+}
+
+.item-3 {
+    background-image: url('./img/3.png');
+}
+
+.item-4 {
+    background-image: url('./img/4.png');
+}
+
+.item-5 {
+    background-image: url('./img/5.png');
+}
+
+.item-6 {
+    background-image: url('./img/6.png');
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -47,6 +47,7 @@ body {
     .image {
         height: 200px;
         background-color: #b11f1f;
+        opacity: 0.1;
     }
 
     .title {

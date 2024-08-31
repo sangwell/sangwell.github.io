@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+}
+
+.banner{
+    height: 200px;
+    background-color: #cfcfcf;
+}
+
+.top-bar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.site-name {
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.github {
+    width: 30px;
+    height: 30px;
+    margin: -60px auto;
+    .svg-icon{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-bg{
+    /* background-color: #656565; */
+}
+
+.keywords{
+    margin: 35px 0;
+    line-height: 36px;
+    word-break: keep-all;
+    .tip{
+        display: inline-block;
+        font-weight: bold;
+        color: #3c3c3c;
+    }
+    span{
+        font-weight: bold;
+        border: 2px solid #0008ff;
+        color: #0008ff;
+        padding: 4px 8px;
+        border-radius: 40px;
+        margin: 0 2px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-gap: 40px;
+}
+
+.grid-item {
+    height: 250px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #3c3c3c;
+    font-size: 18px;
+    line-height: 40px;
+
+    .image {
+        height: 200px;
+        background-color: #cdcdcd;
+        opacity: 0.1;
+    }
+}
+
+.item-1 {
+    background-image: url('./img/3.png');
+}
+
+.item-2 {
+    background-image: url('./img/3.png');
+}
+
+.item-3 {
+    background-image: url('./img/3.png');
+}
+
+.item-4 {
+    background-image: url('./img/4.png');
+}
+
+.item-5 {
+    background-image: url('./img/5.png');
+}
+
+.item-6 {
+    background-image: url('./img/6.png');
+}
+
+.footer{
+    height: 100px;
+    background-color: #3c3c3c;
+    margin-top: 60px;
+    padding-top: 45px;
+    .footer-github {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        .svg-icon{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1201px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* @media screen and (min-width: 601px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */
+
+/* 当屏幕宽度小于等于600像素时应用的样式 */
+/* @media (max-width: 600px) {
+    .container-bg {
+        background-color: rgb(255, 185, 185);
+    }
+} */
+
+/* 当屏幕宽度大于600像素且小于等于1200像素时应用的样式 */
+/* @media (min-width: 601px) and (max-width: 1200px) {
+    .container-bg {
+        background-color: rgb(128, 183, 255);
+    }
+} */

@@ -3,7 +3,8 @@ html {
 }
 
 :root {
-    --active-color: #00c77a;
+    /*--active-color: #00c77a;*/
+    --active-color: #00a968;
 }
 
 .container {
@@ -18,6 +19,14 @@ html {
         .title {
             flex: 1;
             font-size: 22px;
+            font-weight: bold;
+
+            span {
+                background: #00c77a;
+                color: #ffffff;
+                padding: 4px 6px;
+                box-shadow: 5px 5px 0px 0px var(--active-color);
+            }
         }
 
         .link {
@@ -35,10 +44,14 @@ html {
                 border-bottom: 3px solid var(--active-color);
             }
         }
+
+        .link-mobile {
+            display: none;
+        }
     }
 
     .body {
-        padding: 70px 30px;
+        padding: 70px 24px;
 
         .row {
             display: flex;
@@ -46,7 +59,7 @@ html {
 
             .col {
                 flex: 1;
-                border: 2px solid #000000;
+                border: 1px solid #000000;
                 height: 220px;
                 margin: 0 15px;
                 box-shadow: 4px 4px 0px 0px #000000;
@@ -54,13 +67,15 @@ html {
 
             .col:hover {
                 cursor: pointer;
-                border: 2px solid var(--active-color);
+                border: 1px solid var(--active-color);
                 box-shadow: 5px 5px 0px 0px var(--active-color);
             }
+
             .item-1 {
                 background-color: #aab2bd;
                 /*background-image: url('./img/3.png');*/
             }
+
             .item-2 {
                 background-color: #f2e6e9;
                 /*background-image: url('./img/3.png');*/
@@ -89,3 +104,55 @@ html {
     }
 }
 
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 35px 0 20px 0;
+
+        .header {
+            .link {
+                display: none;
+            }
+
+            .link-mobile {
+                display: block;
+                padding-right: 5px;
+                padding-top: 8px;
+                cursor: pointer;
+            }
+
+            .link-mobile:active + .menu {
+                display: block;
+            }
+        }
+
+        .body {
+            padding: 40px 0;
+
+            .row {
+                display: block;
+                margin-bottom: 0px;
+
+                .col {
+                    margin: 0 10px 28px 10px;
+                }
+            }
+        }
+    }
+
+    .menu {
+        display: none;
+        height: 100vh;
+        width: 100%;
+        background: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        .close {
+            text-align: right;
+            margin-top: 50px;
+            padding-right: 30px;
+        }
+    }
+}

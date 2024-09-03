@@ -39,7 +39,7 @@
     </div>
     <div class="body">
         <div class="row">
-            <div class="col item-1">
+            <div class="col item-1" onclick="openPage('./projects/index.html')">
                 <p class="title" title="WAGO SCADA web工业组态">WAGO SCADA web工业组态</p>
                 <p class="tag">
                     <span>Angular</span>
@@ -82,6 +82,10 @@
     function closeMenu(){
         const menu = document.getElementById('menuList');
         menu.style.display = 'none';
+    }
+
+    function openPage(url){
+        window.open(url, '_blank');
     }
 </script>
 

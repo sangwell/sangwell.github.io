@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<title>【作品】Wago Scada web工业组态</title>-->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/slide.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slide.js"></script>
 </head>
 <body>
 
@@ -39,9 +42,13 @@
     </div>
     <div class="body">
         <div class="project-info">
-            <h3>项目名称：WAGO SCADA web工业组态</h3>
-            <h3>项目地址：<a href="https://www.wagoscada.cn/" target="_blank">https://www.wagoscada.cn/</a></h3>
-            <h3>项目截图：</h3>
+            <h4>项目名称：WAGO SCADA web工业组态</h4>
+            <h4>项目地址：<a href="https://www.wagoscada.cn/" target="_blank">https://www.wagoscada.cn/</a></h4>
+            <h4>项目截图：</h4>
+        </div>
+        <!--<div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
         </div>
         <div class="row">
             <div class="col"></div>
@@ -50,15 +57,47 @@
         <div class="row">
             <div class="col"></div>
             <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
+        </div>-->
+        <div class="ck-slide">
+            <ul class="ck-slide-wrapper">
+                <li>
+                    <img src="../images/1.jpg" alt="">
+                </li>
+                <li style="display:none">
+                    <img src="../images/2.jpg" alt="">
+                </li>
+                <li style="display:none">
+                    <img src="../images/3.jpg" alt="">
+                </li>
+                <li style="display:none">
+                    <img src="../images/4.jpg" alt="">
+                </li>
+                <li style="display:none">
+                    <img src="../images/5.jpg" alt="">
+                </li>
+            </ul>
+            <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a>
+            <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+            <div class="ck-slidebox">
+                <div class="slideWrap">
+                    <ul class="dot-wrap">
+                        <li class="current"><em>1</em></li>
+                        <li><em>2</em></li>
+                        <li><em>3</em></li>
+                        <li><em>4</em></li>
+                        <li><em>5</em></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
+    $('.ck-slide').ckSlide({
+        autoPlay:false
+        /*dir:"x"*/
+    });
     function openMenu() {
         const menu = document.getElementById('menuList');
         menu.style.display = 'block';

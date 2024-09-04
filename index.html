@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 <div class="container">
     <div class="header">
         <div class="title">
-            <span>JinKai 作品集</span>
+            <span onclick="openPage('../index.html','_self')">JinKai 作品集</span>
         </div>
         <div class="link">
             <a href="">作品</a>
@@ -39,7 +39,7 @@
     </div>
     <div class="body">
         <div class="row">
-            <div class="col item-1" onclick="openPage('./projects/1.html')">
+            <div class="col item-1" onclick="openPage('./pages/1.html')">
                 <p class="title" title="WAGO SCADA web工业组态">WAGO SCADA web工业组态</p>
                 <p class="tag">
                     <span>Angular</span>
@@ -84,8 +84,8 @@
         menu.style.display = 'none';
     }
 
-    function openPage(url){
-        window.open(url, '_blank');
+    function openPage(url, target = "_blank") {
+        window.open(url, target);
     }
 </script>
 

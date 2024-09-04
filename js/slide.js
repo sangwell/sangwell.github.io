@@ -50,14 +50,12 @@
                 if(opts.autoPlay){
                     clearInterval(time);
                 }
-                $(this).find('.ctrl-slide').css({opacity:0.6});
             });
             //  leave
             $(this).on('mouseleave', function(){
                 if(opts.autoPlay){
                     startAtuoPlay();
                 }
-                $(this).find('.ctrl-slide').css({opacity:0.15});
             });
             startAtuoPlay();
             // auto play

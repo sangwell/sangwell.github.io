@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<title>【作品】Wago Scada web工业组态</title>-->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/slide.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/slide.js"></script>
@@ -14,10 +14,10 @@
 <div class="container">
     <div class="header">
         <div class="title">
-            <span>JinKai 作品集</span>
+            <span onclick="openPage('../index.html','_self')">JinKai 作品集</span>
         </div>
         <div class="link">
-            <a href="">作品</a>
+            <a href="../index.html" target="_self">作品</a>
             <a href="">简历</a>
             <a href="https://github.com/sangwell" target="_blank">Github</a>
         </div>
@@ -31,7 +31,12 @@
         </div>
         <div class="menu" id="menuList">
             <div class="close">
-                <svg onclick="closeMenu()" t="1725173390477" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5240" width="50" height="50"><path d="M490.666667 431.957333L751.957333 170.666667 810.666667 229.376 549.376 490.666667 810.666667 751.957333 751.957333 810.666667 490.666667 549.376 229.376 810.666667 170.666667 751.957333l261.290666-261.290666L170.666667 229.376 229.376 170.666667z" fill="#2E2F30" p-id="5241"></path></svg>
+                <svg onclick="closeMenu()" t="1725173390477" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="5240" width="50" height="50">
+                    <path
+                        d="M490.666667 431.957333L751.957333 170.666667 810.666667 229.376 549.376 490.666667 810.666667 751.957333 751.957333 810.666667 490.666667 549.376 229.376 810.666667 170.666667 751.957333l261.290666-261.290666L170.666667 229.376 229.376 170.666667z"
+                        fill="#2E2F30" p-id="5241"></path>
+                </svg>
             </div>
             <ul class="menu-ul">
                 <li><a href="" onclick="closeMenu()">作品</a></li>
@@ -46,34 +51,33 @@
             <h4>项目地址：<a href="https://www.wagoscada.cn/" target="_blank">https://www.wagoscada.cn/</a></h4>
             <h4>项目截图：</h4>
         </div>
-        <!--<div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>-->
         <div class="ck-slide">
             <ul class="ck-slide-wrapper">
                 <li>
-                    <img src="../images/1.jpg" alt="">
+                    <div>
+                        <img src="../images/1.jpg" alt="">
+                    </div>
+
                 </li>
                 <li style="display:none">
-                    <img src="../images/2.jpg" alt="">
+                    <div>
+                        <img src="../images/2.png" alt="">
+                    </div>
                 </li>
                 <li style="display:none">
-                    <img src="../images/3.jpg" alt="">
+                    <div>
+                        <img src="../images/3.png" alt="">
+                    </div>
                 </li>
                 <li style="display:none">
-                    <img src="../images/4.jpg" alt="">
+                    <div>
+                        <img src="../images/4.jpg" alt="">
+                    </div>
                 </li>
                 <li style="display:none">
-                    <img src="../images/5.jpg" alt="">
+                    <div>
+                        <img src="../images/5.jpg" alt="">
+                    </div>
                 </li>
             </ul>
             <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a>
@@ -95,21 +99,21 @@
 
 <script>
     $('.ck-slide').ckSlide({
-        autoPlay:false
-        /*dir:"x"*/
+        autoPlay: false
     });
+
     function openMenu() {
         const menu = document.getElementById('menuList');
         menu.style.display = 'block';
     }
 
-    function closeMenu(){
+    function closeMenu() {
         const menu = document.getElementById('menuList');
         menu.style.display = 'none';
     }
 
-    function openPage(url){
-        window.open(url, '_blank');
+    function openPage(url, target = "_blank") {
+        window.open(url, target);
     }
 </script>
 

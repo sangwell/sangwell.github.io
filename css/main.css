@@ -1,6 +1,6 @@
 html {
     font-family: "Microsoft YaHei", sans-serif;
-    /*opacity: 0.1;*/
+    opacity: 0.1;
 }
 
 :root {
@@ -21,6 +21,7 @@ html {
             flex: 1;
             font-size: 22px;
             font-weight: bold;
+            cursor: pointer;
 
             span {
                 background: #00c77a;

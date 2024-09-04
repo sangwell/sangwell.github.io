@@ -95,7 +95,7 @@ html {
                 }
 
                 .tag {
-                    padding: 0 20px;
+                    padding: 0 16px;
                     position: absolute;
                     bottom: 0;
                     margin: 0;
@@ -105,10 +105,8 @@ html {
                     font-weight: bold;
 
                     span {
-                        border: 3px solid #000000;
-                        border-radius: 20px;
-                        padding: 0 8px;
-                        background: yellow;
+                        padding: 0 3px;
+                        font-weight: bold;
                     }
                 }
             }

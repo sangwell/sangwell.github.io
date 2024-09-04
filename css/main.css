@@ -25,13 +25,13 @@ html {
             flex: 1;
             font-size: 22px;
             font-weight: bold;
-            cursor: pointer;
 
             span {
                 background: #00c77a;
                 color: #ffffff;
                 padding: 4px 6px;
                 box-shadow: 5px 5px 0px 0px var(--active-color);
+                cursor: pointer;
             }
         }
 

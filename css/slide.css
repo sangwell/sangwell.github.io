@@ -58,7 +58,6 @@
   z-index: 2;
   width: 35px;
   height: 70px;
-  background: red;
   margin-top: -35px;
   position: absolute;
   border-radius: 3px;
@@ -70,12 +69,12 @@
 
 .ck-slide .ck-prev {
   left: -45px;
-  background: url(../images/arrow-left.png) no-repeat center center;
+  background: url(../images/left-arrow.svg) no-repeat center center;
 }
 
 .ck-slide .ck-next {
   right: -45px;
-  background: url(../images/arrow-right.png) no-repeat center center;
+  background: url(../images/right-arrow.svg) no-repeat center center;
 }
 
 .ck-slidebox {
@@ -88,7 +87,7 @@
 .ck-slidebox ul {
   height: 20px;
   padding: 0 4px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
 

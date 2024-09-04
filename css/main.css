@@ -8,6 +8,10 @@ html {
     --active-color: #00a968;
 }
 
+.active{
+    border-bottom: 3px solid var(--active-color);
+}
+
 .container {
     width: 1100px;
     margin: 0 auto;
@@ -41,6 +45,7 @@ html {
                 margin-left: 20px;
                 color: #000000;
                 font-weight: bold;
+                padding-bottom: 2px;
             }
 
             a:hover {

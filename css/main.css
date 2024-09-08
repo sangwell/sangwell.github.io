@@ -8,6 +8,10 @@ html {
     --active-color: #00a968;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .active{
     border-bottom: 3px solid var(--active-color);
 }

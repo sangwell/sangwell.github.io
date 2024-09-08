@@ -86,12 +86,16 @@
 <script>
     function openMenu() {
         const menu = document.getElementById('menuList');
+        const body = document.body;
         menu.style.display = 'block';
+        body.classList.add('no-scroll');
     }
 
     function closeMenu(){
         const menu = document.getElementById('menuList');
+        const body = document.body;
         menu.style.display = 'none';
+        body.classList.remove('no-scroll');
     }
 
     function openPage(url, target = "_blank") {

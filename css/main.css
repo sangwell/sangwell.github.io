@@ -1,11 +1,15 @@
 html {
     font-family: "Microsoft YaHei", sans-serif;
-    opacity: 0.1;
+    /*opacity: 0.1;*/
 }
 
 :root {
     /*--active-color: #00c77a;*/
     --active-color: #00a968;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .active{

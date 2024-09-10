@@ -1,6 +1,6 @@
 html {
   font-family: "Microsoft YaHei", sans-serif;
-  opacity: 0.1;
+  /*opacity: 0.1;*/
 }
 
 :root {
@@ -10,6 +10,10 @@ html {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.resume-height{
+  height:800px;
 }
 
 .active {

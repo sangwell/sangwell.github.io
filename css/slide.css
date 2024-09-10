@@ -115,14 +115,21 @@
   background: #00a968;
 }
 
-.mobile-pic-list{
+.mobile-pic-list {
   display: none;
 }
+
 @media (max-width: 500px) {
   .ck-slide {
     display: none;
   }
-  .mobile-pic-list{
+
+  .mobile-pic-list {
     display: block;
+
+    .col {
+      height: auto !important;
+      padding: 0 !important;
+    }
   }
 }

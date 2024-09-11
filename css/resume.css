@@ -1,0 +1,67 @@
+body {
+
+}
+
+.resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.font-color{
+    color: #666;
+}
+
+header h1 {
+    color: #333;
+}
+
+header p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.skills ul, .education p, .experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li, .experience ul li {
+    margin-bottom: 10px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.flex-row {
+    display: flex;
+    color: #666;
+}
+.flex-cell {
+    flex: 1;
+    padding: 8px;
+    border-right: 1px solid black;
+    text-align: left;
+}
+.flex-cell:last-child {
+    border-right: none;
+}
+
+.row-title{
+    max-width: 100px;
+    text-align: right;
+}

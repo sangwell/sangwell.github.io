@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【简历】</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/resume.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="title">
+            <span onclick="openPage('../index.html','_self')">JinKai 作品集</span>
+        </div>
+        <div class="link">
+            <a href="../index.html" target="_self">项目</a>
+            <a href="" class="active">简历</a>
+            <a href="https://github.com/sangwell" target="_blank">Github</a>
+        </div>
+        <div class="link-mobile" onclick="openMenu()">
+            <svg t="1725172511027" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 p-id="4261" width="40" height="40">
+                <path
+                        d="M170.666667 213.333333h682.666666v85.333334H170.666667V213.333333z m0 512h682.666666v85.333334H170.666667v-85.333334z m0-256h682.666666v85.333334H170.666667v-85.333334z"
+                        fill="#444444" p-id="4262"></path>
+            </svg>
+        </div>
+        <div class="menu" id="menuList">
+            <div class="close">
+                <svg onclick="closeMenu()" t="1725173390477" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="5240" width="50" height="50">
+                    <path
+                            d="M490.666667 431.957333L751.957333 170.666667 810.666667 229.376 549.376 490.666667 810.666667 751.957333 751.957333 810.666667 490.666667 549.376 229.376 810.666667 170.666667 751.957333l261.290666-261.290666L170.666667 229.376 229.376 170.666667z"
+                            fill="#2E2F30" p-id="5241"></path>
+                </svg>
+            </div>
+            <ul class="menu-ul">
+                <li><a href="" onclick="closeMenu()">项目</a></li>
+                <li><a href="" onclick="closeMenu()">简历</a></li>
+                <li><a href="https://github.com/sangwell" target="_blank" onclick="closeMenu()">Github</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body resume-height">
+        <!--<embed src="./resume.pdf" type="application/pdf" width="100%" height="100%" />-->
+        <div class="resume">
+            <header>
+                <h1>金凯</h1>
+                <p>联系方式: 151-9568-1736 · Email: sangwell@126.com · 个人网站: sangwell.github.io</p>
+            </header>
+            <section class="skills">
+                <h2>专业技能</h2>
+                <ul class="font-color">
+                    <li>熟练掌握前端基础(JavaScript、CSS3、HTML5)，熟悉 JavaScript 标准</li>
+                    <li>熟练使用 Angular，Vue 框架及周边生态</li>
+                    <li>有大型前端项目架构设计、研发、代码优化和性能优化的能力</li>
+                    <li>熟悉基于 Ionic 的 Hybrid App 开发</li>
+                    <li>熟悉前端算法和数据结构</li>
+                    <li>熟悉 Git 工作流，CI/CD 和敏捷开发</li>
+                </ul>
+            </section>
+            <section class="education">
+                <h2>教育背景</h2>
+                <p class="font-color">苏州科技大学 2012.9 — 2016.6 | 本科 通信工程</p>
+            </section>
+            <section class="experience">
+                <h2>工作/项目经历</h2>
+                <div class="job">
+                    <h3>高级前端开发工程师 | 苏州美名软件有限公司 | 2016.9 — 至今</h3>
+                    <ul>
+                        <li>（1）Wago Scada web 工业组态平台</li>
+                        <li>
+                            <div class="flex-container">
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">项目介绍:</div>
+                                    <div class="flex-cell">基于标准 Web 技术的网页组态平台，支持 2D 组态和 3D 可视化组态，可实现实时监控 和远程控制各种工业过程，可用于能源管理，智慧楼宇，工业数字化等。</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">项目链接:</div>
+                                    <div class="flex-cell">https://www.wagoscada.cn</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">技术栈:</div>
+                                    <div class="flex-cell">Angular，TypeScript，RxJS，Fabric.js，AntV，Echarts，SignalR</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">个人职责:</div>
+                                    <div class="flex-cell">
+                                        <p>·负责项目前期可行性调研和技术选型;</p>
+                                        <p>·主导整个系统前端架构搭建，设计全局状态管理和实时推送机制;</p>
+                                        <p>·为全系统 45 个画面控件制定统一数据结构，统一实现控件属性的修改和保存，提高代 码复用、可维护性和可扩展性;</p>
+                                        <p>·负责开发万级变量列表及性能优化，在频繁滚动时，通过防抖和虚拟滚动，使得每行 的实时数据从订阅到渲染无明显延迟;</p>
+                                        <p>·封装通用功能，拆分子项目，将一个冗杂的大项目拆分成 9 个子项目，提升可维护性; </p>
+                                        <p>·参与编写单元测试和代码 Review。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>（2）杭州精工钢化炉产线实时监控</li>
+                        <li>
+                            <div class="flex-container">
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">项目介绍:</div>
+                                    <div class="flex-cell">用于展示和控制钢化玻璃生产过程中的产线状态，集成订单管理功能，根据订单自动调 整生产计划。</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">技术栈:</div>
+                                    <div class="flex-cell">Angular，RxJS，Ant Design</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">个人职责:</div>
+                                    <div class="flex-cell">
+                                        <p>·负责订单管理页面开发;</p>
+                                        <p>·负责产线可视化，在生产线图像上应用不规则 SVG 覆盖层，显示钢化炉不同区域的实 时温度数据;</p>
+                                        <p>·通过 SVG，JS，CSS3 绘制生产过程动画。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>（3）滇池水务实时监控 App</li>
+                        <li>
+                            <div class="flex-container">
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">项目介绍:</div>
+                                    <div class="flex-cell">一款用于显示污水处理设备实时状态、实时报警、历史统计、维保订单和人员管理的 App。</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">技术栈:</div>
+                                    <div class="flex-cell">Ionic，Angular，Cordova</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">个人职责:</div>
+                                    <div class="flex-cell">
+                                        <p>·负责 App 所有页面的开发;</p>
+                                        <p>·负责 App 的真机调试和打包发布;</p>
+                                        <p>·解决打包后相机插件和原生安卓的不兼容问题。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>（4）基金定投模拟平台[个人项目]</li>
+                        <li>
+                            <div class="flex-container">
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">项目介绍:</div>
+                                    <div class="flex-cell">该项目是一个基于Node.js的基金定投模拟平台，用户可以通过注册和登录系统，选择不
+                                        同的基金，并利用历史数据进行定投模拟。后端从基金网站抓取最新数据，系统提供收
+                                        益曲线和模拟结果展示。</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">技术栈:</div>
+                                    <div class="flex-cell">Node.js，Express，Angular，MySQL</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">个人职责:</div>
+                                    <div class="flex-cell">
+                                        <p>·使用 Express 框架和 MySQL 搭建后台;</p>
+                                        <p>·编写 Node.js 爬虫获取基金网站数据;</p>
+                                        <p>·编写基金选择、定投收益计算、收益曲线等功能。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>前端开发工程师 | 苏州中广游网络科技有限公司 | 2015.8 — 2016.5</h3>
+                    <ul>
+                        <li>（1）公司官网</li>
+                        <li>
+                            <div class="flex-container">
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">项目链接:</div>
+                                    <div class="flex-cell">http://www.c2engine.com</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">技术栈:</div>
+                                    <div class="flex-cell">HTML5，CSS3，JavaScript，Bootstrap，jQuery</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">个人职责:</div>
+                                    <div class="flex-cell">
+                                        <p>·根据效果图实现官网页面;</p>
+                                        <p>·基于 Bootstrap 框架，实现从手机端到 PC 端的响应式布局。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>（2）仿 Unity 3D web 编辑器</li>
+                        <li>
+                            <div class="flex-container">
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">项目介绍:</div>
+                                    <div class="flex-cell">将Unity 3D的界面使用Web技术实现，编写JavaScript来处理用户交互。</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">技术栈:</div>
+                                    <div class="flex-cell">HTML5，CSS3，JavaScript，jQuery UI</div>
+                                </div>
+                                <div class="flex-row">
+                                    <div class="flex-cell row-title">个人职责:</div>
+                                    <div class="flex-cell">
+                                        <p>·仿照 Unity 3D 实现 web UI 布局;</p>
+                                        <p>·对第三方 JS 库进行移植和二次开发。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openMenu() {
+        const menu = document.getElementById('menuList');
+        menu.style.display = 'block';
+    }
+
+    function closeMenu() {
+        const menu = document.getElementById('menuList');
+        menu.style.display = 'none';
+    }
+
+    function openPage(url, target = "_blank") {
+        window.open(url, target);
+    }
+</script>
+
+</body>
+</html>

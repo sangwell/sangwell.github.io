@@ -2,11 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinKai作品集</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<h1>Test</h1>
+<div class="container">
+    <div class="header">
+        <div class="title">
+            <span onclick="openPage('../index.html','_self')">JinKai 作品集</span>
+        </div>
+        <div class="link">
+            <a href="./index.html" class="active">项目</a>
+            <a href="./pages/resume.html" target="_blank">简历</a>
+            <a href="https://github.com/sangwell" target="_blank">Github</a>
+        </div>
+        <div class="link-mobile" onclick="openMenu()">
+            <svg t="1725172511027" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 p-id="4261" width="40" height="40">
+                <path
+                    d="M170.666667 213.333333h682.666666v85.333334H170.666667V213.333333z m0 512h682.666666v85.333334H170.666667v-85.333334z m0-256h682.666666v85.333334H170.666667v-85.333334z"
+                    fill="#444444" p-id="4262"></path>
+            </svg>
+        </div>
+        <div class="menu" id="menuList">
+            <div class="close">
+                <svg onclick="closeMenu()" t="1725173390477" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5240" width="50" height="50"><path d="M490.666667 431.957333L751.957333 170.666667 810.666667 229.376 549.376 490.666667 810.666667 751.957333 751.957333 810.666667 490.666667 549.376 229.376 810.666667 170.666667 751.957333l261.290666-261.290666L170.666667 229.376 229.376 170.666667z" fill="#2E2F30" p-id="5241"></path></svg>
+            </div>
+            <ul class="menu-ul">
+                <li><a href="./index.html" onclick="closeMenu()">项目</a></li>
+                <li><a href="./pages/resume.html" onclick="closeMenu()">简历</a></li>
+                <li><a href="https://github.com/sangwell" target="_blank" onclick="closeMenu()">Github</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="row">
+            <div class="col item-1" onclick="openPage('./pages/scada.html')">
+                <p class="title" title="WAGO SCADA web工业组态">WAGO SCADA web组态平台</p>
+                <p class="tag">
+                    <span>Angular</span>/
+                    <span>RxJs</span>/
+                    <span>TypeScript</span>
+                </p>
+                <div class="new">New!</div>
+            </div>
+            <div class="col item-2" onclick="openPage('./pages/vue.html')">
+                <p class="title" title="VUE Dashboard">VUE Dashboard</p>
+                <p class="tag">
+                    <span>Vue</span>/
+                    <span>Ant Design Vue</span>
+                </p>
+            </div>
+            <div class="col item-3" onclick="openPage('./pages/dianchi.html')">
+                <p class="title" title="滇池水务实时监控App">滇池水务实时监控App</p>
+                <p class="tag">
+                    <span>Ionic</span>/
+                    <span>Cordova</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col item-4" onclick="openPage('./pages/jinglass.html')">
+                <p class="title" title="杭州精工钢化炉产线">杭州精工钢化炉产线</p>
+                <p class="tag">
+                    <span>Angular</span>/
+                    <span>SVG</span>/
+                    <span>CSS3</span>
+                </p>
+            </div>
+            <div class="col item-5" onclick="openPage('./pages/kalendar.html')">
+                <p class="title" title="Kalendar刻历App">Kalendar刻历App</p>
+                <p class="tag">
+                    <span>Ionic</span>/
+                    <span>Cordova</span>
+                </p>
+            </div>
+            <div class="col item-6" onclick="openPage('./pages/fridaylyWebApp.html')">
+                <p class="title" title="基金模拟投资+爬虫">基金模拟投资+爬虫</p>
+                <p class="tag">
+                    <span>Angular</span>/
+                    <span>Node.js</span>/
+                    <span>Material UI</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col item-2" onclick="openPage('./pages/hema.html')">
+                <p class="title" title="无锡河马远程监控云平台">无锡河马远程监控云平台</p>
+                <p class="tag">
+                    <span>Angular</span>
+                </p>
+            </div>
+            <div class="col item-1" onclick="openPage('./pages/crrc.html')">
+                <p class="title" title="中车戚所焊机远程监控系统">中车戚所焊机远程监控系统</p>
+                <p class="tag">
+                    <span>Angular</span>
+                </p>
+            </div>
+            <div class="col item-4" onclick="openPage('./pages/movie.html')">
+                <p class="title" title="电影资讯app">电影资讯app</p>
+                <p class="tag">
+                    <span>Ionic</span>/
+                    <span>Cordova</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col item-4" onclick="openPage('./pages/woxun.html')">
+                <p class="title" title="杭州沃寻智能设备监控平台">杭州沃寻智能设备监控平台</p>
+                <p class="tag">
+                    <span>Angular</span>
+                </p>
+            </div>
+            <div class="col item-3" onclick="openPage('./pages/svg.html')">
+                <p class="title" title="SVG编辑器">SVG编辑器</p>
+                <p class="tag">
+                    <span>JavaScript</span>/
+                    <span>SVG</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openMenu() {
+        const menu = document.getElementById('menuList');
+        const body = document.body;
+        menu.style.display = 'block';
+        body.classList.add('no-scroll');
+    }
+
+    function closeMenu(){
+        const menu = document.getElementById('menuList');
+        const body = document.body;
+        menu.style.display = 'none';
+        body.classList.remove('no-scroll');
+    }
+
+    function openPage(url, target = "_blank") {
+        window.open(url, target);
+    }
+</script>
 
 </body>
 </html>

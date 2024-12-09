@@ -1,0 +1,245 @@
+html {
+  font-family: "Microsoft YaHei", sans-serif;
+  /*opacity: 0.1;*/
+}
+
+:root {
+  /*--active-color: #00c77a;*/
+  --active-color: #00a968;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.resume-height{
+  height:800px;
+}
+
+.active {
+  border-bottom: 3px solid var(--active-color);
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  .header {
+    display: flex;
+    line-height: 32px;
+
+    .title {
+      flex: 1;
+      font-size: 22px;
+      font-weight: bold;
+
+      span {
+        background: #00c77a;
+        color: #ffffff;
+        padding: 4px 6px;
+        box-shadow: 5px 5px 0px 0px var(--active-color);
+        cursor: pointer;
+      }
+    }
+
+    .link {
+      flex: 1;
+      text-align: right;
+      font-size: 16px;
+
+      a {
+        text-decoration: none;
+        margin-left: 20px;
+        color: #000000;
+        font-weight: bold;
+        padding-bottom: 2px;
+      }
+
+      a:hover {
+        border-bottom: 3px solid var(--active-color);
+      }
+    }
+
+    .link-mobile {
+      display: none;
+    }
+  }
+
+  .body {
+    padding: 70px 24px;
+
+    .project-info {
+      h4 {
+        margin: 15px 0;
+      }
+    }
+
+    .row {
+      display: flex;
+      margin-bottom: 60px;
+
+      .col {
+        flex: 1;
+        border: 1px solid #000000;
+        height: 220px;
+        margin: 0 15px;
+        box-shadow: 4px 4px 0px 0px #000000;
+        padding: 20px;
+        font-size: 32px;
+        line-height: 46px;
+        font-weight: bold;
+        position: relative;
+
+        .title {
+          margin: 0;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 1.5; /* 调整行高以适应两行文本 */
+          max-height: 3em; /* 两行文本的高度，1.5 * 2 */
+        }
+
+        .tag {
+          padding: 0 16px;
+          position: absolute;
+          bottom: 0;
+          margin: 0;
+          right: 0;
+          text-align: right;
+          font-size: 14px;
+          font-weight: bold;
+
+          span {
+            padding: 0 3px;
+            font-weight: bold;
+          }
+        }
+
+        .new {
+          position: absolute;
+          bottom: 0;
+          left: 20px;
+          font-size: 18px;
+          font-style: italic;
+          color: red;
+          font-weight: bold;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .col:hover {
+        cursor: pointer;
+        border: 1px solid var(--active-color);
+        box-shadow: 5px 5px 0px 0px var(--active-color);
+      }
+
+      .item-1 {
+        background-color: #aab2bd;
+      }
+
+      .item-2 {
+        background-color: #f2e6e9;
+      }
+
+      .item-3 {
+        background-color: #d6cadd;
+      }
+
+      .item-4 {
+        background-color: #9caca5;
+      }
+
+      .item-5 {
+        background-color: #8ca1b5;
+      }
+
+      .item-6 {
+        background-color: #d8bfb3;
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 35px 0 20px 0;
+
+    .header {
+      .link {
+        display: none;
+      }
+
+      .link-mobile {
+        display: block;
+        padding-right: 5px;
+        padding-top: 2px;
+        cursor: pointer;
+      }
+    }
+
+    .body {
+      padding: 40px 0;
+
+      .row {
+        display: block;
+        margin-bottom: 0px;
+
+        .col {
+          margin: 0 10px 28px 10px;
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+
+    .close {
+      text-align: right;
+      margin-top: 50px;
+      padding-right: 30px;
+      cursor: pointer;
+    }
+
+    .menu-ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+
+      li {
+        font-size: 32px;
+        cursor: pointer;
+
+        a {
+          display: block;
+          padding: 50px 0;
+          text-decoration: none;
+          margin-left: 20px;
+          color: #000000;
+        }
+
+        a:hover {
+          color: var(--active-color);
+        }
+      }
+    }
+  }
+}

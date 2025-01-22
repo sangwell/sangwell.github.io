@@ -1,0 +1,104 @@
+html {
+    font-family: "Microsoft YaHei", sans-serif;
+    /*opacity: 0.1;*/
+}
+
+:root {
+    /*--active-color: #00c77a;*/
+    --active-color: #00a968;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.resume-height{
+    height:800px;
+}
+
+.active {
+    border-bottom: 3px solid var(--active-color);
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    .header {
+        display: flex;
+        line-height: 32px;
+
+        .title {
+            flex: 1;
+            font-size: 72px;
+            font-weight: bold;
+        }
+    }
+
+    .body {
+        padding: 70px 24px;
+        height: calc(100vh - 300px);
+
+        .tag{
+            position: absolute;
+            font-size: 30px;
+        }
+
+        .tag-1{
+            top: 20%;
+            left: 20%;
+        }
+        .tag-2{
+            top: 17%;
+            left: 38%;
+        }
+        .tag-3{
+            top: 17%;
+            left: 50%;
+        }
+        .tag-4{
+            top: 22%;
+            left: 33%;
+        }
+        .tag-5{
+            top: 26%;
+            left: 50%;
+        }
+        .tag-6{
+            top: 29%;
+            left: 23%;
+        }
+        .tag-7{
+            top: 24%;
+            left: 25%;
+        }
+        .tag-8{
+            top: 27%;
+            left: 36%;
+        }
+
+        .menu{
+            float: right;
+            margin-top: calc(50% - 280px);
+            margin-right: -100px;
+
+            .menuItem{
+                width: 200px;
+                height: 80px;
+                margin-bottom: 20px;
+                background: #000000;
+                color: #ffffff;
+                text-align: center;
+                font-size: 26px;
+                line-height: 80px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+
+}
